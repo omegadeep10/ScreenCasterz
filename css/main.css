@@ -19,25 +19,31 @@ nav {
 	}
 	nav ul {
 		height: 100%;
+		float: right;
 	}
-	nav ul li {
+	nav li {
 		position: relative;
-		top: 28%;
+		top: 30%;
 		display: inline;
 		list-style: none;
 		color: white;
 	}
-		nav ul li a {
+		nav a {
 			text-decoration: none;
-			padding: 2px 5px;
+			padding: 5px 10px;
 			color: rgba(255,255,255,.7);
-			border-radius: 5px;
+			border-radius: 0px;
+			margin-left: 5px;
 			border: 1px solid rgba(255,255,255,.7);
 		}
-			nav ul li a:visited {
+			nav a:visited {
 				color: rgba(255,255,255,.7);
 			}
-			nav ul li a:hover {
+			nav a:hover {
 				border: 1px solid white;
 				color: white;
 			}
+
+#main {
+	
+}
