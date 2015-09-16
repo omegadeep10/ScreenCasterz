@@ -45,5 +45,11 @@ nav {
 			}
 
 #main {
-	
+	width: 680px;
+	display: block;
+	margin: 0 auto;
 }
+
+	.bg {
+		width: 100%;
+	}
