@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Triforce';
+    src: url('resources/fonts/triforcewebfont.eot');
+    src: url('resources/fonts/triforcewebfont.eot') format('embedded-opentype'),
+         url('resources/fonts/triforcewebfont.woff2') format('woff2'),
+         url('resources/fonts/triforcewebfont.woff') format('woff'),
+         url('resources/fonts/triforcewebfont.ttf') format('truetype'),
+         url('resources/fonts/triforcewebfont.svg') format('svg');
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -52,4 +62,8 @@ nav {
 
 	.bg {
 		width: 100%;
+	}
+
+	.info h1 {
+		font-family: 'Triforce';
 	}
