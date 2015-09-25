@@ -1,4 +1,4 @@
 markdown: redcarpet
-highlighter: rouge
+highlighter: pygments
 baseurl: /screencasterz
 exclude: ['README.md']
