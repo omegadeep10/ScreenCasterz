@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Triforce';
-    src: url('resources/fonts/triforcewebfont.eot');
-    src: url('resources/fonts/triforcewebfont.eot') format('embedded-opentype'),
-         url('resources/fonts/triforcewebfont.woff2') format('woff2'),
-         url('resources/fonts/triforcewebfont.woff') format('woff'),
-         url('resources/fonts/triforcewebfont.ttf') format('truetype'),
-         url('resources/fonts/triforcewebfont.svg') format('svg');
+    src: url('../resources/fonts/triforcewebfont.eot');
+    src: url('../resources/fonts/triforcewebfont.eot') format('embedded-opentype'),
+         url('../resources/fonts/triforcewebfont.woff2') format('woff2'),
+         url('../resources/fonts/triforcewebfont.woff') format('woff'),
+         url('../resources/fonts/triforcewebfont.ttf') format('truetype'),
+         url('../resources/fonts/triforcewebfont.svg') format('svg');
 }
 
 * {
@@ -27,6 +27,14 @@ nav {
 		margin: 0 auto;
 		height: 100%;
 	}
+	nav span {
+		font-family: "Triforce";
+		font-size: 2em;
+		color: white;
+		float: left;
+		margin-top: 35px;
+		letter-spacing: 1px;
+	}
 	nav ul {
 		height: 100%;
 		float: right;
@@ -37,6 +45,8 @@ nav {
 		display: inline;
 		list-style: none;
 		color: white;
+		font-family: Tahoma, sans-serif;
+		font-size: 1em;
 	}
 		nav a {
 			text-decoration: none;
@@ -58,12 +68,27 @@ nav {
 	width: 680px;
 	display: block;
 	margin: 0 auto;
+	padding: 50px 0;
 }
 
 	.bg {
-		width: 100%;
+		width: 45%;
+		display: inline-block;
 	}
+	.info {
+		display: inline-block;
+		width: 50%;
+		background: lightblue;
+		vertical-align: top;
+	}
+		.info h1 {
+			font-family: 'Triforce';
+		}
 
-	.info h1 {
-		font-family: 'Triforce';
-	}
+
+
+footer .container {
+	width: 100%;
+	height: 200px;
+	background-color: black;
+}
