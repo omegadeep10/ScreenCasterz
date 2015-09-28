@@ -1,10 +1,19 @@
 	<nav>
 		<div class="content-wrap">
-            <span>ScreenCasterz</span>
-			
+            <span>{{ page.active }}</span>
+
             <ul>
-				<li><a href="{{site:baseurl}}/index.html" id="home-nav">Home</a></li>
-				<li><a href="{{site.baseurl}}/blog.html" id="blog-nav">Blog</a></li>
+                {% if page.active == "home" %}
+				    <li><a href="{{site:baseurl}}/index.html" id="current">Home</a></li>
+                {% else %}
+                    <li><a href="{{site:baseurl}}/index.html">Home</a></li>
+                {% endif %}
+
+                {% if page.active == "blog" %}
+				    <li><a href="{{site.baseurl}}/blog.html" id="current">Blog</a></li>
+                {% else %}
+                    <li><a href="{{site.baseurl}}/blog.html">Blog</a></li>
+                {% endif %}
 			</ul>
 		</div>
 	</nav>

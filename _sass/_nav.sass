@@ -4,18 +4,20 @@ nav
     background-color: $nav-color
 
     .content-wrap 
-        max-width: 680px
+        max-width: 900px
         display: block
         margin: 0 auto
         height: 100%
 
     span 
-        font-family: $heading
-        font-size: 2em
+        font-family: $nav
+        text-transform: uppercase
+        font-size: 1.5em
         color: white
         float: left
         margin-top: 35px
         letter-spacing: 1px
+        display: none
 
     ul 
         height: 100%
@@ -29,19 +31,19 @@ nav
         color: white
         font-family: $nav
 
+    #current
+        background-color: $accent-color
+        color: $nav-color
+
     a 
         text-decoration: none
         padding: 5px 10px
-        color: rgba(255,255,255,.7)
+        color: rgba(255,255,255, .8)
         margin-left: 10px
-        border: 1px solid rgba(255,255,255,.7)
 
         &:visited 
-            color: rgba(255,255,255,.7)
+            color: rgba(255,255,255, .8)
 
         &:hover 
-            border: 1px solid white
-            color: white
-
-.current
-    background-color: red
+            @extend #current
+            color: $nav-color
