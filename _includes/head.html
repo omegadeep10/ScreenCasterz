@@ -1,4 +1,22 @@
 	<meta charset="utf-8">
 	<title>ScreenCasterZ</title>
-	<link href="{{site:baseurl}}/css/main.css" rel="stylesheet" type="text/css">
+	
+    <!--CSS-->
+    <link href="{{site:baseurl}}/css/main.css" rel="stylesheet" type="text/css">
+    
+    <!--Script for YouTube subscribe button-->
     <script src="https://apis.google.com/js/platform.js"></script>
+
+    <!--Import Abel and PT Sans Narrow-->
+    <link href='https://fonts.googleapis.com/css?family=Abel|PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+
+    <!--Highlights current page. CREDIT: http://eznetu.com/current-link.html#-->
+    <script>
+        $(function(){
+            $('a').each(function() {
+                if ($(this).prop('href') == window.location.href) {
+                    $(this).addClass('current');
+                }
+            });
+        });
+    </script>
