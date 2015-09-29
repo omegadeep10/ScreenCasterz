@@ -5,7 +5,8 @@ active: home
 	
 	<div id="main">
 		
-		<div id="about">	
+		
+		<section id="about">	
 			<!--Card image. Applied transform in CSS-->
 			<img src="{{site:baseurl}}/resources/card.jpg" alt="background image" class="bg" />
 			
@@ -19,37 +20,51 @@ active: home
 				
 				<div class="g-ytsubscribe" data-channelid="UCccyO6vSekh7QICZCRs270g" data-layout="default" data-count="default"></div>
 			</div>
-		</div>
+		</section>
 
-		<div id="social">
+
+
+		<section id="social">
 			<h3>Social Media</h3>
 
-			<div class="col">
+			<article class="col">
 				<img src="{{site:baseurl}}/resources/youtube.png" alt="Youtube Channel" class="col-image"/>
 				<h4>YouTube</h4>
 				<p>I make YouTube videos about all things related to YuGiOh, like deck profiles, tips, discussions, and more.</p>
 				<a href="https://www.youtube.com/channel/UCccyO6vSekh7QICZCRs270g/featured">YouTube</a>
-			</div>
+			</article>
 
-			<div class="col">
+			<article class="col">
 				<img src="{{site:baseurl}}/resources/facebook.png" alt="Facebook" class="col-image"/>
 				<h4>Facebook</h4>
 				<p>Join the official Facebook group and recieve channel updates right from the horse's mouth.</p>
 				<a href="https://www.facebook.com/ScreenCasterz?_rdr=p">Facebook</a>
-			</div>
+			</article>
 
-			<div class="col">
+			<article class="col">
 				<img src="{{site:baseurl}}/resources/twitter.png" alt="Twitter" class="col-image"/>
 				<h4>Twitter</h4>
 				<p>Follow me on Twitter for a exclusive sneak preview inside my weird brain.</p>
 				<a href="https://twitter.com/ScreenCasterz">Twitter</a>
-			</div>
+			</article>
 
-			<div class="col">
+			<article class="col">
 				<img src="{{site:baseurl}}/resources/googleplus.png" alt="Google Plus" class="col-image"/>
 				<h4>Google+</h4>
 				<p>Check out the official Google+ page for even more YuGiOh content.</p>
 				<a href="https://plus.google.com/117460655515465020972">Google+</a>
+			</article>
+		</section>
+
+
+		<section id="blog">
+			<div class="desc">
+				<h3>Blog</h3>
+				<p>I also write blog posts about YuGiOh, life, and everything in between. For example, this week I {% for post in site.posts limit:1 %} {{ post.description }} {% endfor %} My blog is updated weekly. Follow me on Twitter for updates when a new blog post goes live!</p>
 			</div>
-		</div>
+			<div class="showcase">
+				<p>Example</p>
+			</div>
+		</section>
+
 	</div>

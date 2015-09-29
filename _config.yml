@@ -1,4 +1,10 @@
+# Site setings
 markdown: redcarpet
 highlighter: pygments
 baseurl: /screencasterz
-exclude: ['README.md']
+exclude: ['README.md','.gitignore']
+
+#Site Information
+name: ScreenCasterz
+description: This is the official website of the YouTube channel ScreenCasterz.
+author: omegadeep10
