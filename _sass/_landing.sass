@@ -1,6 +1,6 @@
 /*CARD + DESCRIPTION*/
 #main 
-    width: 900px
+    max-width: 900px
     display: block
     margin: 0 auto
     padding: 10px 0
@@ -52,6 +52,7 @@
         width: 20%
         vertical-align: top
         text-align: center
+        border: 1px solid $text-color
 
         .col-image
             width: 100%
@@ -64,22 +65,26 @@
         p
             font-family: $text
             line-height: 1.3em
-            margin-bottom: 40px
+            padding: 0 5px
             color: $text-color
             text-align: center
+            margin-bottom: 25px
 
         a
             font-family: $nav
+            position: relative
+            top: 10px
             text-decoration: none
             padding: 5px 10px
             border: 1px solid $text-color
+            background-color: $nav-color
             color: $text-color
 
             &:visited
                 @extend a
 
             &:hover
-                border: none
+                border: 1px solid $accent-color
                 background-color: $accent-color
                 color: $nav-color
 
