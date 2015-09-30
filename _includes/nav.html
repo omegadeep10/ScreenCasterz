@@ -1,19 +1,17 @@
 	<nav>
-		<div class="content-wrap">
-            <span>{{ page.active }}</span>
 
-            <ul>
-                {% if page.active == "home" %}
-				    <li><a href="{{site:baseurl}}/index.html" id="current">Home</a></li>
-                {% else %}
-                    <li><a href="{{site:baseurl}}/index.html">Home</a></li>
-                {% endif %}
+        <ul>
+            {% if page.active == "home" %}
+			    <li><a href="{{site:baseurl}}/index.html" id="current">Home</a></li>
+            {% else %}
+                <li><a href="{{site:baseurl}}/index.html">Home</a></li>
+            {% endif %}
 
-                {% if page.active == "blog" %}
-				    <li><a href="{{site.baseurl}}/blog.html" id="current">Blog</a></li>
-                {% else %}
-                    <li><a href="{{site.baseurl}}/blog.html">Blog</a></li>
-                {% endif %}
-			</ul>
-		</div>
+            {% if page.active == "blog" %}
+			    <li><a href="{{site.baseurl}}/blog.html" id="current">Blog</a></li>
+            {% else %}
+                <li><a href="{{site.baseurl}}/blog.html">Blog</a></li>
+            {% endif %}
+		</ul>
+            
 	</nav>

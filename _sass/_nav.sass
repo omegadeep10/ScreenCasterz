@@ -1,23 +1,9 @@
 nav
-    max-width: 100%
     height: 100px
     background-color: $nav-color
-
-    .content-wrap 
-        max-width: 900px
-        display: block
-        margin: 0 auto
-        height: 100%
-
-    span 
-        font-family: $nav
-        text-transform: uppercase
-        font-size: 1.5em
-        color: white
-        float: left
-        margin-top: 35px
-        letter-spacing: 1px
-        display: none
+    max-width: 900px
+    display: block
+    margin: 0 auto
 
     ul 
         height: 100%
@@ -34,15 +20,21 @@ nav
     #current
         background-color: $accent-color
         color: $nav-color
+        
+        /*Transition*/
+        -webkit-transition: background-color 250ms ease-out .1s
+        -moz-transition: background-color 250ms ease-out .1s
+        -o-transition: background-color 250ms ease-out .1s
+        transition: background-color 250ms ease-out .1s
 
     a 
         text-decoration: none
         padding: 5px 10px
-        color: rgba(255,255,255, .8)
+        color: $text-color
         margin-left: 10px
 
         &:visited 
-            color: rgba(255,255,255, .8)
+            color: $text-color
 
         &:hover 
             @extend #current
