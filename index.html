@@ -24,28 +24,28 @@ active: home
 
 		<section id="social">
 
-			<article class="col">
+			<article class="col even">
 				<img src="{{site:baseurl}}/resources/youtube.png" alt="Youtube Channel" class="col-image"/>
 				<h4>YouTube</h4>
-				<p>I make YouTube videos about all things related to YuGiOh.</p>
+				<p>I make YouTube videos about everything related to YuGiOh.</p>
 				<a href="https://www.youtube.com/channel/UCccyO6vSekh7QICZCRs270g/featured" class="button">YouTube</a>
 			</article>
 
-			<article class="col">
+			<article class="col odd">
 				<img src="{{site:baseurl}}/resources/facebook.png" alt="Facebook" class="col-image"/>
 				<h4>Facebook</h4>
-				<p>Join the official Facebook group and recieve regular channel updates.</p>
+				<p>Join the Facebook group for regular channel updates.</p>
 				<a href="https://www.facebook.com/ScreenCasterz?_rdr=p" class="button">Facebook</a>
 			</article>
 
-			<article class="col">
+			<article class="col even">
 				<img src="{{site:baseurl}}/resources/twitter.png" alt="Twitter" class="col-image"/>
 				<h4>Twitter</h4>
-				<p>Follow me on Twitter for a exclusive sneak preview inside my weird brain.</p>
+				<p>Follow me on Twitter for a exclusive look inside my weird head.</p>
 				<a href="https://twitter.com/ScreenCasterz" class="button">Twitter</a>
 			</article>
 
-			<article class="col">
+			<article class="col odd">
 				<img src="{{site:baseurl}}/resources/googleplus.png" alt="Google Plus" class="col-image"/>
 				<h4>Google+</h4>
 				<p>Check out the official Google+ page for even more YuGiOh content.</p>
@@ -57,7 +57,7 @@ active: home
 		<section id="blog">
 			<div class="desc">
 				<h3>Blog</h3>
-				<p>I also write about YuGiOh, life, and everything in between.  My blog is updated weekly. I also often have guest writers on my blog, which means extra awesome content for you guys! Follow me on Twitter for updates when a new blog post goes live.</p>
+				<p>I also write about YuGiOh, life, and everything in between.  My blog is updated weekly. I often have guest writers on my blog, which means extra awesome content for you guys! Follow me on Twitter for updates when a new blog post goes live.</p>
 				<p>This week {% for post in site.posts limit:1 %} {{ post.author }} {{ post.description }} {% endfor %}</p>
 				<a href="{{site.baseurl}}/blog.html" class="button">All Posts</a>
 			</div>
