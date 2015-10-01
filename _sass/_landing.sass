@@ -1,11 +1,11 @@
 /*General styles*/
 h1
     font-family: $heading
-    font-size: 2.5em
     font-weight: normal
     margin: 25px 0
     letter-spacing: 1px
     color: $heading-color
+    font-size: 2.5em
 
 h3
     @extend h1
@@ -21,6 +21,13 @@ p
     font-size: 1.2em
     margin: 20px 0
     color: $text-color
+
+    a
+        text-decoration: none
+        color: $accent-color
+
+        &:hover
+            border-bottom: 1px solid $accent-color
 
 .button
     font-family: $nav
@@ -48,27 +55,22 @@ p
 
 /*CARD + DESCRIPTION*/
 #main 
-    max-width: 900px
+    max-width: 85%
     display: block
     margin: 0 auto
-    padding: 10px 0
     background-color: $nav-color  
 
     .bg 
-        width: 30%
-        margin-right: 4%
-        display: inline
-
+        width: 100%
 
 .info 
     display: inline-block
-    padding: 0 20px
-    width: 65%
-    vertical-align: top
+    width: 100%
+    margin-top: 15px
 
     div
         position: relative
-        top: 15px
+        top: 10px
 
 /*SOCIAL*/
 
@@ -76,11 +78,12 @@ p
     margin: 50px 0
 
     .col
-        display: inline-block
-        width: 20%
-        vertical-align: top
+        display: block
+        width: 70%
+        margin: 0 auto 70px auto
         text-align: center
         border-bottom: 1px solid $text-color
+        padding: 0 10px
         
 
         .col-image
@@ -90,31 +93,22 @@ p
             position: relative
             top: 10px
 
-        p
-            padding: 0 10px
-
-    .col:not(:last-child)
-        margin-right: 6.2%
-
 /*BLOG*/
-
 #blog
-    margin: 100px 0 0 0
 
     .desc
-        display: inline-block
-        float: left
-        width: 50%
-        padding: 0 50px 0 0
+        display: block
+        width: 100%
 
         .button
             position: relative
             top: 10px
 
     .showcase
-        display: inline-block
+        display: block
         position: relative
-        width: 50%
+        margin: 50px auto 0 auto
+        width: 100%
         background-color: $main-color
         padding: 35px
 
@@ -143,6 +137,7 @@ p
             left: 0
             bottom: 0
             display: block
+            /*Transparent to Background color Gradient*/
             background: -webkit-linear-gradient(rgba(255,255,255,0), $nav-color)
             background: -o-linear-gradient(rgba(255,255,255,0), $nav-color)
             background: -moz-linear-gradient(rgba(255,255,255,0), $nav-color)

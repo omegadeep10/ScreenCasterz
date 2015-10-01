@@ -12,7 +12,7 @@ active: home
 			<div class="info">	
 				<h1>ScreenCasterz</h1>
 				
-				<p>Welcome to the official ScreenCasterZ website. ScreenCasterZ is a YouTube Channel dedicated to bringing you the best YuGiOh content on the Internet. Check out some of Jager-M's videos below.</p>
+				<p>Welcome to the official ScreenCasterZ website. ScreenCasterZ is a YouTube Channel dedicated to bringing you the best YuGiOh content on the Internet. Check out some of Jager-M's videos <a href="https://www.youtube.com/channel/UCccyO6vSekh7QICZCRs270g/featured">here.</a></p>
 
 				<p>This is the definitive channel for news, tips, discussions, deck profiles, and all things Yu-Gi-Oh! I hope you enjoy watching as much as I do making the videos. As always, my name is Jager-M, and I approve this amazing channel.</p>
 				
@@ -57,7 +57,8 @@ active: home
 		<section id="blog">
 			<div class="desc">
 				<h3>Blog</h3>
-				<p>I also write blog posts about YuGiOh, life, and everything in between. For example, this week I {% for post in site.posts limit:1 %} {{ post.description }} {% endfor %} My blog is updated weekly. Follow me on Twitter for updates when a new blog post goes live!</p>
+				<p>I also write about YuGiOh, life, and everything in between.  My blog is updated weekly. I also often have guest writers on my blog, which means extra awesome content for you guys! Follow me on Twitter for updates when a new blog post goes live.</p>
+				<p>This week {% for post in site.posts limit:1 %} {{ post.author }} {{ post.description }} {% endfor %}</p>
 				<a href="{{site.baseurl}}/blog.html" class="button">All Posts</a>
 			</div>
 			
