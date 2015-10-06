@@ -1,0 +1,61 @@
+---
+layout: default
+active: blog
+---
+    
+<div id="main">
+	
+    <h1 class="blog-title">Blog</h1>
+
+    <div class="blog-nav">
+    
+    {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}" class="button previous">Previous</a>
+    {% else %}
+        <span class="button grey previous">Previous</span>
+    {% endif %}
+    
+    
+    <span class="page_number">{{ paginator.page }} of {{ paginator.total_pages }}</span>
+    
+    
+    {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}" class="button next">Next</a>
+    {% else %}
+        <span class="button grey next">Next</span>
+    {% endif %}
+
+</div>
+
+    {% for post in paginator.posts %}
+    <div class="post">      
+            <h4 class="title">{{ post.title }}</h4>
+            <p class="author">{{ post.author }} - {{ post.date | date: "%-d %B %Y" }}</p>
+            <p class="excerpt">{{ post.excerpt }}</p>
+        <div class="read-more">
+            <a href="{{ site.baseurl }}{{post.url}}" class="button">Read More</a>
+        </div>
+    </div>
+    {% endfor %}
+
+<div class="blog-nav">
+    
+    {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}" class="button previous">Previous</a>
+    {% else %}
+        <span class="button grey previous">Previous</span>
+    {% endif %}
+    
+    
+    <span class="page_number">{{ paginator.page }} of {{ paginator.total_pages }}</span>
+    
+    
+    {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}" class="button next">Next</a>
+    {% else %}
+        <span class="button grey next">Next</span>
+    {% endif %}
+
+</div>
+
+</div>
