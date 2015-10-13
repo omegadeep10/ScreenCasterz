@@ -10,5 +10,5 @@ description: This is the official website of the YouTube channel ScreenCasterz.
 author: omegadeep10
 
 #Pagination settings
-paginate: 5
+paginate: 10
 paginate_path: "/blog/page:num/"
