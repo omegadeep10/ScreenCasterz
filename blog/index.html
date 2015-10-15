@@ -7,7 +7,9 @@ active: blog
 	
     <h1 class="blog-title">Blog</h1>
 
-    {% include page_buttons.html position='top' %}
+    {% if paginator.total_posts > 10 %}
+        {% include page_buttons.html position='top' %}
+    {% endif %}
 
     {% for post in paginator.posts %}
     <div class="post">      
@@ -20,6 +22,7 @@ active: blog
     </div>
     {% endfor %}
 
-    {% include page_buttons.html position='bottom' %}
-
+    {% if paginator.total_posts > 10 %}
+        {% include page_buttons.html position='bottom' %}
+    {% endif %}
 </div>
